@@ -1,0 +1,202 @@
+aid: dol
+name: Department of Labor Vocabulary
+description: >
+  Vocabulary terms for the U.S. Department of Labor APIs covering employment statistics,
+  OSHA enforcement, wage compliance, foreign labor certification, mine safety, workforce
+  development, veterans employment, and international child and forced labor data.
+created: '2026-06-13'
+modified: '2026-06-13'
+baseUrl: https://developer.dol.gov/vocab#
+namespaces:
+  - prefix: dol
+    uri: https://developer.dol.gov/vocab#
+  - prefix: bls
+    uri: https://www.bls.gov/vocab#
+  - prefix: osha
+    uri: https://www.osha.gov/vocab#
+  - prefix: whd
+    uri: https://www.dol.gov/agencies/whd/vocab#
+  - prefix: msha
+    uri: https://www.msha.gov/vocab#
+  - prefix: eta
+    uri: https://www.dol.gov/agencies/eta/vocab#
+  - prefix: ilab
+    uri: https://www.dol.gov/agencies/ilab/vocab#
+
+classes:
+  - id: dol:EmploymentStatistics
+    label: Employment Statistics
+    description: Statistical data on employment, wages, and labor market conditions from the Bureau of Labor Statistics.
+    related:
+      - bls:CES
+      - bls:CPS
+      - bls:OES
+      - bls:CPI
+
+  - id: dol:OSHAInspection
+    label: OSHA Inspection
+    description: Data record for an OSHA workplace safety inspection including citations, violations, and penalty information.
+    related:
+      - osha:OSHAViolation
+      - osha:OSHACitation
+
+  - id: dol:WageCompliance
+    label: Wage Compliance Action
+    description: A Wage and Hour Division compliance action record including back wages owed, employer, and violation details.
+
+  - id: dol:ForeignLaborCertification
+    label: Foreign Labor Certification
+    description: Labor Condition Application data for H-1B, H-1B1, E-3, H-2A, H-2B, and D-1 visa categories filed with OFLC.
+
+  - id: dol:MineSafety
+    label: Mine Safety Record
+    description: MSHA data covering mine information, accidents, injuries, inspections, and violations.
+
+  - id: dol:WorkforceData
+    label: Workforce Development Data
+    description: Employment and Training Administration data on unemployment insurance claims and workforce investment programs.
+
+  - id: dol:VeteransEmployment
+    label: Veterans Employment Record
+    description: VETS-4212 and VETS-100 federal contractor data on veteran hiring and representation.
+
+  - id: dol:ChildLabor
+    label: Child Labor Record
+    description: ILAB Sweat and Toil data on goods produced with child or forced labor by country and good type.
+
+properties:
+  - id: dol:apiKey
+    label: API Key
+    description: Authentication key required to access the DOL API endpoints.
+    type: string
+    domain: dol:APIRequest
+
+  - id: dol:seriesId
+    label: Series ID
+    description: Unique identifier for a BLS data series (e.g., CES, CPS, OES series).
+    type: string
+    domain: dol:EmploymentStatistics
+
+  - id: dol:dataYear
+    label: Data Year
+    description: The calendar year for which data is reported.
+    type: integer
+
+  - id: dol:inspectionNumber
+    label: Inspection Number
+    description: Unique OSHA inspection activity number.
+    type: string
+    domain: dol:OSHAInspection
+
+  - id: dol:establishmentName
+    label: Establishment Name
+    description: Name of the business or establishment subject to an OSHA inspection or WHD compliance action.
+    type: string
+
+  - id: dol:caseNumber
+    label: Case Number
+    description: Unique identifier for a WHD compliance action case.
+    type: string
+    domain: dol:WageCompliance
+
+  - id: dol:backWages
+    label: Back Wages
+    description: Dollar amount of back wages assessed in a WHD compliance action.
+    type: decimal
+    domain: dol:WageCompliance
+
+  - id: dol:employerName
+    label: Employer Name
+    description: Name of the employer in a foreign labor certification application.
+    type: string
+    domain: dol:ForeignLaborCertification
+
+  - id: dol:visaType
+    label: Visa Type
+    description: Type of foreign worker visa (H-1B, H-1B1, E-3, H-2A, H-2B, D-1).
+    type: string
+    domain: dol:ForeignLaborCertification
+    allowedValues:
+      - H-1B
+      - H-1B1
+      - E-3
+      - H-2A
+      - H-2B
+      - D-1
+
+  - id: dol:mineId
+    label: Mine ID
+    description: Unique MSHA identifier for a mine.
+    type: string
+    domain: dol:MineSafety
+
+  - id: dol:mineName
+    label: Mine Name
+    description: Name of the mine as registered with MSHA.
+    type: string
+    domain: dol:MineSafety
+
+  - id: dol:uiClaimsWeek
+    label: UI Claims Week
+    description: The week ending date for initial unemployment insurance claims data.
+    type: date
+    domain: dol:WorkforceData
+
+  - id: dol:veteranStatus
+    label: Veteran Status
+    description: Category of veteran status (e.g., disabled veteran, recently separated veteran).
+    type: string
+    domain: dol:VeteransEmployment
+
+  - id: dol:goodType
+    label: Good Type
+    description: Type of good produced with child or forced labor as catalogued by ILAB.
+    type: string
+    domain: dol:ChildLabor
+
+  - id: dol:country
+    label: Country
+    description: Country associated with a labor record (child labor, forced labor, or foreign labor certification).
+    type: string
+
+  - id: bls:seriesTitle
+    label: Series Title
+    description: Human-readable title for a BLS statistical data series.
+    type: string
+    domain: dol:EmploymentStatistics
+
+  - id: bls:period
+    label: Period
+    description: Time period for BLS data (e.g., M01 for January, Q01 for first quarter).
+    type: string
+    domain: dol:EmploymentStatistics
+
+  - id: bls:value
+    label: Statistical Value
+    description: The numeric value for a BLS statistical series measurement.
+    type: decimal
+    domain: dol:EmploymentStatistics
+
+  - id: osha:activityNr
+    label: Activity Number
+    description: OSHA activity number uniquely identifying an inspection event.
+    type: string
+    domain: dol:OSHAInspection
+
+  - id: osha:violationType
+    label: Violation Type
+    description: Category of OSHA violation (Willful, Serious, Other-Than-Serious, Repeat, Failure-to-Abate).
+    type: string
+    domain: dol:OSHAInspection
+    allowedValues:
+      - Willful
+      - Serious
+      - Other-Than-Serious
+      - Repeat
+      - Failure-to-Abate
+
+  - id: osha:penaltyAmount
+    label: Penalty Amount
+    description: Dollar amount of the OSHA penalty assessed for a citation.
+    type: decimal
+    domain: dol:OSHAInspection

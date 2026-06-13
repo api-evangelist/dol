@@ -1,0 +1,172 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "dol": "https://developer.dol.gov/vocab#",
+    "bls": "https://www.bls.gov/vocab#",
+    "osha": "https://www.osha.gov/vocab#",
+    "whd": "https://www.dol.gov/agencies/whd/vocab#",
+    "msha": "https://www.msha.gov/vocab#",
+    "eta": "https://www.dol.gov/agencies/eta/vocab#",
+    "ilab": "https://www.dol.gov/agencies/ilab/vocab#",
+    "name": "name",
+    "description": "description",
+    "url": "url",
+    "identifier": "identifier",
+    "dateCreated": "dateCreated",
+    "dateModified": "dateModified",
+    "provider": {
+      "@id": "provider",
+      "@type": "@id"
+    },
+    "GovernmentOrganization": "GovernmentOrganization",
+    "GovernmentService": "GovernmentService",
+    "Dataset": "Dataset",
+    "DataCatalog": "DataCatalog",
+    "WebAPI": "WebAPI",
+    "EntryPoint": "EntryPoint",
+    "Action": "Action",
+    "SearchAction": "SearchAction",
+    "dol:EmploymentStatistics": {
+      "@id": "dol:EmploymentStatistics",
+      "@type": "rdfs:Class"
+    },
+    "dol:OSHAInspection": {
+      "@id": "dol:OSHAInspection",
+      "@type": "rdfs:Class"
+    },
+    "dol:WageCompliance": {
+      "@id": "dol:WageCompliance",
+      "@type": "rdfs:Class"
+    },
+    "dol:ForeignLaborCertification": {
+      "@id": "dol:ForeignLaborCertification",
+      "@type": "rdfs:Class"
+    },
+    "dol:MineSafety": {
+      "@id": "dol:MineSafety",
+      "@type": "rdfs:Class"
+    },
+    "dol:WorkforceData": {
+      "@id": "dol:WorkforceData",
+      "@type": "rdfs:Class"
+    },
+    "dol:VeteransEmployment": {
+      "@id": "dol:VeteransEmployment",
+      "@type": "rdfs:Class"
+    },
+    "dol:ChildLabor": {
+      "@id": "dol:ChildLabor",
+      "@type": "rdfs:Class"
+    },
+    "dol:apiKey": {
+      "@id": "dol:apiKey",
+      "@type": "xsd:string"
+    },
+    "dol:dataYear": {
+      "@id": "dol:dataYear",
+      "@type": "xsd:integer"
+    },
+    "dol:seriesId": {
+      "@id": "dol:seriesId",
+      "@type": "xsd:string"
+    },
+    "dol:inspectionNumber": {
+      "@id": "dol:inspectionNumber",
+      "@type": "xsd:string"
+    },
+    "dol:establishmentName": {
+      "@id": "dol:establishmentName",
+      "@type": "xsd:string"
+    },
+    "dol:caseNumber": {
+      "@id": "dol:caseNumber",
+      "@type": "xsd:string"
+    },
+    "dol:backWages": {
+      "@id": "dol:backWages",
+      "@type": "xsd:decimal"
+    },
+    "dol:employerName": {
+      "@id": "dol:employerName",
+      "@type": "xsd:string"
+    },
+    "dol:visaType": {
+      "@id": "dol:visaType",
+      "@type": "xsd:string"
+    },
+    "dol:mineId": {
+      "@id": "dol:mineId",
+      "@type": "xsd:string"
+    },
+    "dol:mineName": {
+      "@id": "dol:mineName",
+      "@type": "xsd:string"
+    },
+    "dol:uiClaimsWeek": {
+      "@id": "dol:uiClaimsWeek",
+      "@type": "xsd:date"
+    },
+    "dol:veteranStatus": {
+      "@id": "dol:veteranStatus",
+      "@type": "xsd:string"
+    },
+    "dol:goodType": {
+      "@id": "dol:goodType",
+      "@type": "xsd:string"
+    },
+    "dol:country": {
+      "@id": "dol:country",
+      "@type": "xsd:string"
+    },
+    "bls:seriesTitle": {
+      "@id": "bls:seriesTitle",
+      "@type": "xsd:string"
+    },
+    "bls:period": {
+      "@id": "bls:period",
+      "@type": "xsd:string"
+    },
+    "bls:value": {
+      "@id": "bls:value",
+      "@type": "xsd:decimal"
+    },
+    "osha:activityNr": {
+      "@id": "osha:activityNr",
+      "@type": "xsd:string"
+    },
+    "osha:violationType": {
+      "@id": "osha:violationType",
+      "@type": "xsd:string"
+    },
+    "osha:penaltyAmount": {
+      "@id": "osha:penaltyAmount",
+      "@type": "xsd:decimal"
+    }
+  },
+  "@graph": [
+    {
+      "@type": "GovernmentOrganization",
+      "@id": "https://www.dol.gov/",
+      "name": "U.S. Department of Labor",
+      "description": "The U.S. Department of Labor fosters, promotes, and develops the welfare of the wage earners, job seekers, and retirees of the United States; improve their working conditions; advance their opportunities for profitable employment; and assure work-related benefits and rights.",
+      "url": "https://www.dol.gov/",
+      "sameAs": [
+        "https://developer.dol.gov/",
+        "https://dataportal.dol.gov/",
+        "https://github.com/USDepartmentofLabor"
+      ]
+    },
+    {
+      "@type": "WebAPI",
+      "@id": "https://api.dol.gov/V1/",
+      "name": "DOL API",
+      "description": "The Department of Labor API provides access to over 200 datasets covering employment, safety, wages, foreign labor, and workforce development.",
+      "url": "https://developer.dol.gov/",
+      "provider": {
+        "@id": "https://www.dol.gov/"
+      },
+      "documentation": "https://developer.dol.gov/",
+      "termsOfService": "https://developer.dol.gov/accessing-the-apis-using-http-requests/"
+    }
+  ]
+}

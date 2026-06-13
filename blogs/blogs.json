@@ -1,0 +1,24 @@
+{
+  "aid": "dol",
+  "name": "Department of Labor Blog",
+  "description": "Blog posts from the U.S. Department of Labor covering labor policy, workforce development, employment statistics, worker safety, and wage enforcement.",
+  "url": "https://blog.dol.gov/",
+  "created": "2026-06-13",
+  "modified": "2026-06-13",
+  "blogs": [
+    {
+      "title": "U.S. Department of Labor Blog",
+      "url": "https://blog.dol.gov/",
+      "feedUrl": "https://blog.dol.gov/feed",
+      "description": "Official blog of the U.S. Department of Labor covering labor policy, workforce development, worker safety, wage enforcement, and employment statistics.",
+      "tags": [
+        "Labor",
+        "Employment",
+        "Workforce",
+        "Safety",
+        "Wages",
+        "Policy"
+      ]
+    }
+  ]
+}
