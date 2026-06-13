@@ -1,0 +1,44 @@
+name: Department of Labor API Plans and Pricing
+description: Pricing and plan tiers for the U.S. Department of Labor API services
+url: https://dataportal.dol.gov/
+plans:
+  - name: Free (Unregistered)
+    description: Open access to the DOL API without registration using legacy V1 endpoints
+    url: https://developer.dol.gov/beginner/
+    isFree: true
+    requiresRegistration: false
+    features:
+      - Access to 200+ datasets
+      - Default response of first 100 records per request
+      - XML and JSON response formats
+      - Basic dataset queries
+    limits:
+      - name: Registration Required
+        value: false
+      - name: API Key Required
+        value: false
+      - name: Data Per Request
+        value: "100 records (default)"
+
+  - name: Free (Registered)
+    description: Free registration grants an API key (token) for authenticated access to DOL API V1 and the new dataportal.dol.gov APIv4
+    url: https://dataportal.dol.gov/
+    isFree: true
+    requiresRegistration: true
+    registrationUrl: https://dataportal.dol.gov/api-keys
+    features:
+      - API key (token) for authenticated requests
+      - Access to 200+ datasets across employment, safety, wages, and workforce
+      - JSON and XML response formats
+      - Dataset filtering and pagination
+      - Access to API metrics per key
+      - Full access to enforcement, H-1B, OSHA, BLS, and WHD datasets
+    limits:
+      - name: Cost
+        value: Free
+      - name: API Key Required
+        value: true
+      - name: Datasets Available
+        value: "200+"
+      - name: Records Per Request
+        value: "100 (default, pageable)"

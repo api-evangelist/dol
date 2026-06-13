@@ -1,0 +1,200 @@
+aid: dol
+name: Department of Labor
+description: >
+  The U.S. Department of Labor provides REST APIs exposing over 200 datasets covering employment
+  statistics, H-1B and foreign labor visa data, OSHA inspections and enforcement, wage and hour
+  violations, job openings, union reports, workforce development data, mine safety, and Bureau of
+  Labor Statistics economic indicators including CPI, CES, OES, and CPS. APIs are free to use with
+  registration via the Open Data Portal.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/dol/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+tags:
+  - Government
+  - Employment
+  - Labor
+  - Workforce
+  - OSHA
+  - Safety
+  - Wages
+  - H-1B
+  - Statistics
+  - Open Data
+apis:
+  - name: DOL Employment Statistics API
+    description: >
+      Access to Current Employment Statistics (CES), Current Population Survey (CPS), Occupational
+      Employment Statistics Survey (OES), Quarterly Census Employment and Wage (CEW), and Consumer
+      Price Indexes (CPI) from the Bureau of Labor Statistics via the DOL centralized API.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.dol.gov/
+    baseURL: https://api.dol.gov/V1/
+    tags:
+      - Employment
+      - Statistics
+      - BLS
+      - CPI
+      - Wages
+    properties:
+      - type: Documentation
+        url: https://developer.dol.gov/
+      - type: Authentication
+        url: https://developer.dol.gov/accessing-the-apis-using-http-requests/
+
+  - name: DOL OSHA Enforcement API
+    description: >
+      Access OSHA inspection and enforcement data including inspection details, violations,
+      citations, penalties, and accident injury reports. Covers all OSHA compliance actions
+      with summary information about inspections conducted across U.S. workplaces.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.dol.gov/health-and-safety/
+    baseURL: https://api.dol.gov/V1/
+    tags:
+      - OSHA
+      - Safety
+      - Health
+      - Enforcement
+      - Inspections
+    properties:
+      - type: Documentation
+        url: https://developer.dol.gov/health-and-safety/
+
+  - name: DOL Wage and Hour Compliance API
+    description: >
+      Access Wage and Hour Division (WHD) compliance action data covering all concluded compliance
+      actions since FY 2005, including back wages, violations, and employer information. Also
+      includes Farm Labor Contractor data and Wage and Hour Publications System.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.dol.gov/
+    baseURL: https://api.dol.gov/V1/
+    tags:
+      - Wages
+      - Compliance
+      - WHD
+      - Labor Standards
+    properties:
+      - type: Documentation
+        url: https://developer.dol.gov/
+
+  - name: DOL H-1B Foreign Labor Certification API
+    description: >
+      Access Labor Condition Application (LCA) data collected by the Employment and Training
+      Administration's Office of Foreign Labor Certification (OFLC) covering H-1B, H-1B1, E-3,
+      H-2A, H-2B, and D-1 visa categories. Includes employer, wage, and job data.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.dol.gov/agencies/eta/foreign-labor/performance
+    baseURL: https://api.dol.gov/V1/
+    tags:
+      - H-1B
+      - Foreign Labor
+      - Visas
+      - Immigration
+      - OFLC
+    properties:
+      - type: Documentation
+        url: https://www.dol.gov/agencies/eta/foreign-labor/performance
+
+  - name: DOL Mine Safety and Health API
+    description: >
+      Access Mine Safety and Health Administration (MSHA) data including mine-by-mine information,
+      accidents and injuries, inspections, violations, assessments, employment and production reports.
+      Covers Full Mine Information, Basic Mine Information, Mine Violations, and Mine Inspections.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.dol.gov/health-and-safety/
+    baseURL: https://api.dol.gov/V1/
+    tags:
+      - Mining
+      - Safety
+      - MSHA
+      - Inspections
+    properties:
+      - type: Documentation
+        url: https://developer.dol.gov/health-and-safety/
+
+  - name: DOL Public Workforce System API
+    description: >
+      Access Public Workforce System data including Initial Unemployment Insurance (UI) Claims,
+      Workforce Investment Act data, job openings, and workforce development program information
+      from the Employment and Training Administration (ETA).
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.dol.gov/
+    baseURL: https://api.dol.gov/V1/
+    tags:
+      - Workforce
+      - Unemployment
+      - Job Openings
+      - ETA
+    properties:
+      - type: Documentation
+        url: https://developer.dol.gov/
+
+  - name: DOL Veterans Employment API
+    description: >
+      Access VETS-4212 and VETS-100 datasets containing veteran employment data reported by
+      federal contractors and subcontractors, including hiring benchmarks and veteran
+      representation across contractor organizations.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.dol.gov/others/
+    baseURL: https://api.dol.gov/V1/
+    tags:
+      - Veterans
+      - Employment
+      - Contractors
+      - VETS
+    properties:
+      - type: Documentation
+        url: https://developer.dol.gov/others/
+
+  - name: DOL Sweat and Toil API
+    description: >
+      Access the International Labor Affairs Bureau (ILAB) Sweat and Toil data covering child
+      labor and forced labor worldwide, including goods produced with child or forced labor
+      by country and good, sourced from ILAB's annual reports.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.dol.gov/others/
+    baseURL: https://api.dol.gov/V1/
+    tags:
+      - Child Labor
+      - Forced Labor
+      - International
+      - ILAB
+    properties:
+      - type: Documentation
+        url: https://developer.dol.gov/others/
+
+common:
+  - type: Website
+    url: https://www.dol.gov/
+  - type: Documentation
+    url: https://developer.dol.gov/
+  - type: GitHubOrg
+    url: https://github.com/USDepartmentofLabor
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/u-s-department-of-labor
+  - type: Blog
+    url: https://blog.dol.gov/
+  - type: Pricing
+    url: https://dataportal.dol.gov/
+  - type: StatusPage
+    url: https://developer.dol.gov/others/api-metrics-per-key/
+  - type: X
+    url: https://x.com/USDOL
+  - type: Plans
+    url: plans/dol-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/dol-rate-limits.yml
+  - type: FinOps
+    url: finops/dol-finops.yml
+  - type: OpenDataPortal
+    url: https://dataportal.dol.gov/
+  - type: ChangeLog
+    url: https://developer.dol.gov/release-notes/
+  - type: EnforceData
+    url: https://enforcedata.dol.gov/
+
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

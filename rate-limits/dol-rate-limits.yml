@@ -1,0 +1,36 @@
+name: Department of Labor API Rate Limits
+description: Rate limiting policies for the U.S. Department of Labor API
+url: https://developer.dol.gov/
+rateLimits:
+  - plan: Free (Unregistered)
+    description: Basic access without an API key via the legacy V1 endpoint
+    limits:
+      - scope: per-request
+        name: Records Per Response
+        value: 100
+        unit: records
+        notes: Default result set size; pagination available via $skip and $top parameters
+
+  - plan: Free (Registered)
+    description: Authenticated access using a free API token obtained from dataportal.dol.gov
+    limits:
+      - scope: per-request
+        name: Records Per Response
+        value: 100
+        unit: records
+        notes: Default; pageable using OData-style $skip and $top query parameters
+      - scope: per-key
+        name: API Metrics
+        value: available
+        unit: usage tracking
+        notes: API metrics per key are available via the /DOLAgency/APIMetrics dataset endpoint
+
+notes: >
+  The DOL API (api.dol.gov/V1/) does not publicly publish hard numerical rate limits (requests per minute
+  or per day). Registration and API keys are free. The new dataportal.dol.gov (APIv4) replaced
+  legacy V1 and V2 services at end of 2024; rate limit details for APIv4 are managed per key and
+  can be monitored through the portal. Specific throttle thresholds are not documented publicly.
+authenticationHeader: X-API-KEY
+legacyAuthParam: KEY (query string parameter for V1 API)
+baseUrl: https://api.dol.gov/V1/
+newPortalUrl: https://dataportal.dol.gov/

@@ -1,0 +1,43 @@
+name: Department of Labor API FinOps
+description: Financial operations guidance for consuming U.S. Department of Labor APIs
+url: https://dataportal.dol.gov/
+costModel:
+  type: free
+  description: >
+    All U.S. Department of Labor APIs are provided free of charge as a public government service.
+    Registration is free and API keys are provided at no cost. There are no paid tiers, premium
+    plans, or usage-based billing. The DOL API is funded by taxpayers and made available to
+    the public under open government data principles.
+
+costDrivers:
+  - name: API Key Registration
+    cost: $0.00
+    description: Free registration at dataportal.dol.gov provides authenticated API access
+  - name: Dataset Access
+    cost: $0.00
+    description: All 200+ datasets available at no cost with a registered API key
+  - name: Data Volume
+    cost: $0.00
+    description: No charges for data volume or number of records retrieved
+
+budgetingGuidance:
+  - consideration: Infrastructure Costs
+    description: >
+      While the DOL API itself is free, consumers should budget for their own infrastructure
+      costs when building applications — hosting, compute, storage, and egress fees from
+      cloud providers storing or processing DOL data.
+  - consideration: Data Refresh Cadence
+    description: >
+      Plan polling frequency carefully; employment statistics and enforcement data are
+      updated on varying schedules (monthly, quarterly, annually). Avoid excessive polling
+      that could trigger undocumented rate limits.
+  - consideration: Migration Risk
+    description: >
+      The legacy V1/V2 APIs were deactivated at end of 2024 in favor of APIv4 at
+      dataportal.dol.gov. Budget time for migration when the API provider updates
+      or deprecates endpoints. Monitor the changelog at developer.dol.gov/release-notes/.
+
+openDataPolicy: true
+governmentFunded: true
+registrationUrl: https://dataportal.dol.gov/api-keys
+changelogUrl: https://developer.dol.gov/release-notes/
