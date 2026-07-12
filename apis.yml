@@ -166,6 +166,8 @@ apis:
         url: https://developer.dol.gov/others/
 
 common:
+  - type: DomainSecurity
+    url: security/dol-domain-security.yml
   - type: Website
     url: https://www.dol.gov/
   - type: Documentation
