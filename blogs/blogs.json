@@ -24,11 +24,10 @@
   "repo": "dol",
   "feeds": [
     {
-      "source": "https://blog.dol.gov/",
-      "saved": 0,
-      "error": "HTTP 403 Forbidden on scrape"
+      "source": "https://www.linkedin.com/company/u-s-department-of-labor",
+      "error": "HTTPError"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-06-27T12:37:46Z"
+  "fetched": "2026-07-11T11:50:51Z"
 }
