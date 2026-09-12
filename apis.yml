@@ -1,11 +1,8 @@
 aid: dol
 name: Department of Labor
-description: >
-  The U.S. Department of Labor provides REST APIs exposing over 200 datasets covering employment
-  statistics, H-1B and foreign labor visa data, OSHA inspections and enforcement, wage and hour
-  violations, job openings, union reports, workforce development data, mine safety, and Bureau of
-  Labor Statistics economic indicators including CPI, CES, OES, and CPS. APIs are free to use with
-  registration via the Open Data Portal.
+description: 'The U.S. Department of Labor provides REST APIs exposing over 200 datasets covering employment statistics, H-1B and foreign labor visa data, OSHA inspections and enforcement, wage and hour violations, job openings, union reports, workforce development data, mine safety, and Bureau of Labor Statistics economic indicators including CPI, CES, OES, and CPS. APIs are free to use with registration via the Open Data Portal.
+
+  '
 type: Index
 deliveryModel:
   model: saas
@@ -36,190 +33,281 @@ created: '2026-06-13'
 modified: '2026-06-13'
 specificationVersion: '0.23'
 tags:
-  - Government
-  - Employment
-  - Labor
-  - Workforce
-  - OSHA
-  - Safety
-  - Wages
-  - H-1B
-  - Statistics
-  - Open Data
+- Government
+- Employment
+- Labor
+- Workforce
+- OSHA
+- Safety
+- Wages
+- H-1B
+- Statistics
+- Open Data
 apis:
-  - name: DOL Employment Statistics API
-    description: >
-      Access to Current Employment Statistics (CES), Current Population Survey (CPS), Occupational
-      Employment Statistics Survey (OES), Quarterly Census Employment and Wage (CEW), and Consumer
-      Price Indexes (CPI) from the Bureau of Labor Statistics via the DOL centralized API.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://developer.dol.gov/
-    baseURL: https://api.dol.gov/V1/
-    tags:
-      - Employment
-      - Statistics
-      - BLS
-      - CPI
-      - Wages
-    properties:
-      - type: Documentation
-        url: https://developer.dol.gov/
-      - type: Authentication
-        url: https://developer.dol.gov/accessing-the-apis-using-http-requests/
+- name: DOL Employment Statistics API
+  description: 'Access to Current Employment Statistics (CES), Current Population Survey (CPS), Occupational Employment Statistics Survey (OES), Quarterly Census Employment and Wage (CEW), and Consumer Price Indexes (CPI) from the Bureau of Labor Statistics via the DOL centralized API.
 
-  - name: DOL OSHA Enforcement API
-    description: >
-      Access OSHA inspection and enforcement data including inspection details, violations,
-      citations, penalties, and accident injury reports. Covers all OSHA compliance actions
-      with summary information about inspections conducted across U.S. workplaces.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://developer.dol.gov/health-and-safety/
-    baseURL: https://api.dol.gov/V1/
-    tags:
-      - OSHA
-      - Safety
-      - Health
-      - Enforcement
-      - Inspections
-    properties:
-      - type: Documentation
-        url: https://developer.dol.gov/health-and-safety/
-
-  - name: DOL Wage and Hour Compliance API
-    description: >
-      Access Wage and Hour Division (WHD) compliance action data covering all concluded compliance
-      actions since FY 2005, including back wages, violations, and employer information. Also
-      includes Farm Labor Contractor data and Wage and Hour Publications System.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://developer.dol.gov/
-    baseURL: https://api.dol.gov/V1/
-    tags:
-      - Wages
-      - Compliance
-      - WHD
-      - Labor Standards
-    properties:
-      - type: Documentation
-        url: https://developer.dol.gov/
-
-  - name: DOL H-1B Foreign Labor Certification API
-    description: >
-      Access Labor Condition Application (LCA) data collected by the Employment and Training
-      Administration's Office of Foreign Labor Certification (OFLC) covering H-1B, H-1B1, E-3,
-      H-2A, H-2B, and D-1 visa categories. Includes employer, wage, and job data.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://www.dol.gov/agencies/eta/foreign-labor/performance
-    baseURL: https://api.dol.gov/V1/
-    tags:
-      - H-1B
-      - Foreign Labor
-      - Visas
-      - Immigration
-      - OFLC
-    properties:
-      - type: Documentation
-        url: https://www.dol.gov/agencies/eta/foreign-labor/performance
-
-  - name: DOL Mine Safety and Health API
-    description: >
-      Access Mine Safety and Health Administration (MSHA) data including mine-by-mine information,
-      accidents and injuries, inspections, violations, assessments, employment and production reports.
-      Covers Full Mine Information, Basic Mine Information, Mine Violations, and Mine Inspections.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://developer.dol.gov/health-and-safety/
-    baseURL: https://api.dol.gov/V1/
-    tags:
-      - Mining
-      - Safety
-      - MSHA
-      - Inspections
-    properties:
-      - type: Documentation
-        url: https://developer.dol.gov/health-and-safety/
-
-  - name: DOL Public Workforce System API
-    description: >
-      Access Public Workforce System data including Initial Unemployment Insurance (UI) Claims,
-      Workforce Investment Act data, job openings, and workforce development program information
-      from the Employment and Training Administration (ETA).
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://developer.dol.gov/
-    baseURL: https://api.dol.gov/V1/
-    tags:
-      - Workforce
-      - Unemployment
-      - Job Openings
-      - ETA
-    properties:
-      - type: Documentation
-        url: https://developer.dol.gov/
-
-  - name: DOL Veterans Employment API
-    description: >
-      Access VETS-4212 and VETS-100 datasets containing veteran employment data reported by
-      federal contractors and subcontractors, including hiring benchmarks and veteran
-      representation across contractor organizations.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://developer.dol.gov/others/
-    baseURL: https://api.dol.gov/V1/
-    tags:
-      - Veterans
-      - Employment
-      - Contractors
-      - VETS
-    properties:
-      - type: Documentation
-        url: https://developer.dol.gov/others/
-
-  - name: DOL Sweat and Toil API
-    description: >
-      Access the International Labor Affairs Bureau (ILAB) Sweat and Toil data covering child
-      labor and forced labor worldwide, including goods produced with child or forced labor
-      by country and good, sourced from ILAB's annual reports.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://developer.dol.gov/others/
-    baseURL: https://api.dol.gov/V1/
-    tags:
-      - Child Labor
-      - Forced Labor
-      - International
-      - ILAB
-    properties:
-      - type: Documentation
-        url: https://developer.dol.gov/others/
-
-common:
-  - type: DomainSecurity
-    url: security/dol-domain-security.yml
-  - type: Website
-    url: https://www.dol.gov/
+    '
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://developer.dol.gov/
+  baseURL: https://api.dol.gov/V1/
+  tags:
+  - Employment
+  - Statistics
+  - BLS
+  - CPI
+  - Wages
+  properties:
   - type: Documentation
     url: https://developer.dol.gov/
-  - type: GitHubOrg
-    url: https://github.com/USDepartmentofLabor
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/u-s-department-of-labor
-  - type: Blog
-    url: https://blog.dol.gov/
-  - type: Pricing
-    url: https://dataportal.dol.gov/
-  - type: StatusPage
-    url: https://developer.dol.gov/others/api-metrics-per-key/
-  - type: X
-    url: https://x.com/USDOL
-  - type: Plans
-    url: plans/dol-plans-pricing.yml
-  - type: RateLimits
-    url: rate-limits/dol-rate-limits.yml
-  - type: FinOps
-    url: finops/dol-finops.yml
-  - type: OpenDataPortal
-    url: https://dataportal.dol.gov/
-  - type: ChangeLog
-    url: https://developer.dol.gov/release-notes/
-  - type: EnforceData
-    url: https://enforcedata.dol.gov/
+  - type: Authentication
+    url: https://developer.dol.gov/accessing-the-apis-using-http-requests/
+- name: DOL OSHA Enforcement API
+  description: 'Access OSHA inspection and enforcement data including inspection details, violations, citations, penalties, and accident injury reports. Covers all OSHA compliance actions with summary information about inspections conducted across U.S. workplaces.
 
+    '
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://developer.dol.gov/health-and-safety/
+  baseURL: https://api.dol.gov/V1/
+  tags:
+  - OSHA
+  - Safety
+  - Health
+  - Enforcement
+  - Inspections
+  properties:
+  - type: Documentation
+    url: https://developer.dol.gov/health-and-safety/
+- name: DOL Wage and Hour Compliance API
+  description: 'Access Wage and Hour Division (WHD) compliance action data covering all concluded compliance actions since FY 2005, including back wages, violations, and employer information. Also includes Farm Labor Contractor data and Wage and Hour Publications System.
+
+    '
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://developer.dol.gov/
+  baseURL: https://api.dol.gov/V1/
+  tags:
+  - Wages
+  - Compliance
+  - WHD
+  - Labor Standards
+  properties:
+  - type: Documentation
+    url: https://developer.dol.gov/
+- name: DOL H-1B Foreign Labor Certification API
+  description: 'Access Labor Condition Application (LCA) data collected by the Employment and Training Administration''s Office of Foreign Labor Certification (OFLC) covering H-1B, H-1B1, E-3, H-2A, H-2B, and D-1 visa categories. Includes employer, wage, and job data.
+
+    '
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.dol.gov/agencies/eta/foreign-labor/performance
+  baseURL: https://api.dol.gov/V1/
+  tags:
+  - H-1B
+  - Foreign Labor
+  - Visas
+  - Immigration
+  - OFLC
+  properties:
+  - type: Documentation
+    url: https://www.dol.gov/agencies/eta/foreign-labor/performance
+- name: DOL Mine Safety and Health API
+  description: 'Access Mine Safety and Health Administration (MSHA) data including mine-by-mine information, accidents and injuries, inspections, violations, assessments, employment and production reports. Covers Full Mine Information, Basic Mine Information, Mine Violations, and Mine Inspections.
+
+    '
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://developer.dol.gov/health-and-safety/
+  baseURL: https://api.dol.gov/V1/
+  tags:
+  - Mining
+  - Safety
+  - MSHA
+  - Inspections
+  properties:
+  - type: Documentation
+    url: https://developer.dol.gov/health-and-safety/
+- name: DOL Public Workforce System API
+  description: 'Access Public Workforce System data including Initial Unemployment Insurance (UI) Claims, Workforce Investment Act data, job openings, and workforce development program information from the Employment and Training Administration (ETA).
+
+    '
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://developer.dol.gov/
+  baseURL: https://api.dol.gov/V1/
+  tags:
+  - Workforce
+  - Unemployment
+  - Job Openings
+  - ETA
+  properties:
+  - type: Documentation
+    url: https://developer.dol.gov/
+- name: DOL Veterans Employment API
+  description: 'Access VETS-4212 and VETS-100 datasets containing veteran employment data reported by federal contractors and subcontractors, including hiring benchmarks and veteran representation across contractor organizations.
+
+    '
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://developer.dol.gov/others/
+  baseURL: https://api.dol.gov/V1/
+  tags:
+  - Veterans
+  - Employment
+  - Contractors
+  - VETS
+  properties:
+  - type: Documentation
+    url: https://developer.dol.gov/others/
+- name: DOL Sweat and Toil API
+  description: 'Access the International Labor Affairs Bureau (ILAB) Sweat and Toil data covering child labor and forced labor worldwide, including goods produced with child or forced labor by country and good, sourced from ILAB''s annual reports.
+
+    '
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://developer.dol.gov/others/
+  baseURL: https://api.dol.gov/V1/
+  tags:
+  - Child Labor
+  - Forced Labor
+  - International
+  - ILAB
+  properties:
+  - type: Documentation
+    url: https://developer.dol.gov/others/
+- aid: dol:dol-api-v4
+  name: DOL Open Data API V4
+  description: The DOL Open Data API v4 is the Department of Labor's modernized REST API replacing the retired developer.dol.gov APIv1 and APIv2. It is served from the DOL Data Portal at dataportal.dol.gov and exposes more than 200 datasets covering wage and hour, occupational safety and health, employment and training, retirement security, and other DOL programs. The Datasets endpoint is publicly accessible without an API key; data endpoints require an API key obtained through registration on the Data Portal.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://dataportal.dol.gov/
+  baseURL: https://apiprod.dol.gov/v4
+  tags:
+  - Datasets
+  - DOL Data Portal
+  - Open Data
+  - REST
+  properties:
+  - type: Documentation
+    url: https://dataportal.dol.gov/
+  - type: User Guide
+    url: https://www.dataportal.dol.gov/pdf/dol-api-user-guide.pdf
+  - type: Datasets Catalog
+    url: https://dataportal.dol.gov/datasets
+  - type: Datasets Endpoint
+    url: https://apiprod.dol.gov/v4/datasets
+  - type: Signup
+    url: https://dataportal.dol.gov/registration
+  contact:
+  - FN: DOL Data Portal
+    url: https://dataportal.dol.gov/
+- aid: dol:bls-public-data-api
+  name: BLS Public Data API V2
+  description: The Bureau of Labor Statistics Public Data API v2 provides programmatic access to historical BLS time series data in JSON or Excel. Version 2 requires registration to obtain a registrationkey query parameter and raises limits to up to 20 years of data per request, 50 series per request, and 500 queries per day. Series include CPI, PPI, employment, wages, productivity, and more.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.bls.gov/developers/
+  baseURL: https://api.bls.gov/publicAPI/v2
+  tags:
+  - BLS
+  - CPI
+  - Employment
+  - Statistics
+  - Time Series
+  - Wages
+  properties:
+  - type: Documentation
+    url: https://www.bls.gov/developers/home.htm
+  - type: API Signatures
+    url: https://www.bls.gov/developers/api_signature_v2.htm
+  - type: Features
+    url: https://www.bls.gov/bls/api_features.htm
+  - type: FAQ
+    url: https://www.bls.gov/developers/api_faqs.htm
+  - type: Python Sample
+    url: https://www.bls.gov/developers/api_python.htm
+  - type: Signup
+    url: https://data.bls.gov/registrationEngine/
+  contact:
+  - FN: BLS Customer Support
+    url: https://www.bls.gov/bls/contact.htm
+- aid: dol:dol-enforcement-data
+  name: DOL Enforcement Data
+  description: The DOL Enforcement Data site at data.dol.gov publishes the Department's enforcement records from agencies including the Wage and Hour Division, OSHA, MSHA, OFCCP, and the Employee Benefits Security Administration. Records are available as bulk downloads and through datasets surfaced on Data.gov.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://data.dol.gov/
+  baseURL: https://data.dol.gov
+  tags:
+  - Enforcement
+  - MSHA
+  - OFCCP
+  - OSHA
+  - Wage and Hour
+  properties:
+  - type: Documentation
+    url: https://data.dol.gov/
+  - type: Datasets
+    url: https://catalog.data.gov/organization/dol-gov
+  contact:
+  - FN: DOL Open Data
+    url: https://www.dol.gov/agencies/oasam
+- aid: dol:dol-api-sampler
+  name: DOL API Sampler
+  description: The DOL API Sampler is an interactive playground for exploring the DOL Open Data API v4 endpoints. It serves as a quick way to issue sample requests, browse parameters, and inspect responses against the live API.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://devtools.dol.gov/apisampler
+  baseURL: https://devtools.dol.gov/apisampler
+  tags:
+  - DevTools
+  - Playground
+  - Sampler
+  properties:
+  - type: Documentation
+    url: https://devtools.dol.gov/apisampler
+  contact:
+  - FN: DOL Developer Community
+    url: https://usdepartmentoflabor.github.io/DOLAPI/
+- aid: dol:dol-open-data-catalog
+  name: DOL Open Data Catalog
+  description: The Department of Labor Open Data Catalog publishes datasets across labor statistics, enforcement, employment training, and worker protection programs. Datasets are surfaced on Data.gov under the dol-gov organization and accessible via the Data.gov CKAN-compatible API.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://catalog.data.gov/organization/dol-gov
+  baseURL: https://catalog.data.gov/api/3
+  tags:
+  - CKAN
+  - Datasets
+  - Open Data
+  properties:
+  - type: Documentation
+    url: https://catalog.data.gov/organization/dol-gov
+  - type: CKAN Reference
+    url: https://docs.ckan.org/en/2.8/api/
+  contact:
+  - FN: DOL Open Data
+    url: https://catalog.data.gov/organization/dol-gov
+common:
+- type: DomainSecurity
+  url: security/dol-domain-security.yml
+- type: Website
+  url: https://www.dol.gov/
+- type: Documentation
+  url: https://developer.dol.gov/
+- type: GitHubOrg
+  url: https://github.com/USDepartmentofLabor
+- type: LinkedIn
+  url: https://www.linkedin.com/company/u-s-department-of-labor
+- type: Blog
+  url: https://blog.dol.gov/
+- type: Pricing
+  url: https://dataportal.dol.gov/
+- type: StatusPage
+  url: https://developer.dol.gov/others/api-metrics-per-key/
+- type: X
+  url: https://x.com/USDOL
+- type: Plans
+  url: plans/dol-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/dol-rate-limits.yml
+- type: FinOps
+  url: finops/dol-finops.yml
+- type: OpenDataPortal
+  url: https://dataportal.dol.gov/
+- type: ChangeLog
+  url: https://developer.dol.gov/release-notes/
+- type: EnforceData
+  url: https://enforcedata.dol.gov/
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
