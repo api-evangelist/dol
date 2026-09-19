@@ -74,6 +74,12 @@ apis:
   - Safety
   - Health
   - Enforcement
+  - Inspection
+  tags_raw:
+  - OSHA
+  - Safety
+  - Health
+  - Enforcement
   - Inspections
   properties:
   - type: Documentation
@@ -103,6 +109,12 @@ apis:
   tags:
   - H-1B
   - Foreign Labor
+  - Visa
+  - Immigration
+  - OFLC
+  tags_raw:
+  - H-1B
+  - Foreign Labor
   - Visas
   - Immigration
   - OFLC
@@ -117,6 +129,11 @@ apis:
   humanURL: https://developer.dol.gov/health-and-safety/
   baseURL: https://api.dol.gov/V1/
   tags:
+  - Mining
+  - Safety
+  - MSHA
+  - Inspection
+  tags_raw:
   - Mining
   - Safety
   - MSHA
