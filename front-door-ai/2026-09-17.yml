@@ -1,0 +1,26 @@
+# Front Door AI Index — dol — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: dol
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.dol.gov
+  final_host: www.dol.gov
+  ownership: own
+  owner: dol
+  shares_host_with:
+  - bureau-of-international-labor-affairs
+  inherited_from: null
+  verdict: scored
+  score: 3
+  host_score: 3
+  density: 4.44
+  words: 676
+  tiers:
+    agentic: 0
+    core: 3
+    model: 0
+  ambiguous: 0
+  top_terms:
+    AI: 3
