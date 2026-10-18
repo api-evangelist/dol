@@ -151,6 +151,11 @@ apis:
   tags:
   - Workforce
   - Unemployment
+  - Job Postings
+  - ETA
+  tags_raw:
+  - Workforce
+  - Unemployment
   - Job Openings
   - ETA
   properties:
@@ -267,6 +272,10 @@ apis:
   humanURL: https://devtools.dol.gov/apisampler
   baseURL: https://devtools.dol.gov/apisampler
   tags:
+  - Developer Tools
+  - Playground
+  - Sampler
+  tags_raw:
   - DevTools
   - Playground
   - Sampler
