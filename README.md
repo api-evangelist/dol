@@ -1,4 +1,4 @@
-# Department of Labor (DOL)
+# Department of Labor
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,23 +64,130 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-APIs.json provider profile for the U.S. Department of Labor.
+The U.S. Department of Labor provides REST APIs exposing over 200 datasets covering employment statistics, H-1B and foreign labor visa data, OSHA inspections and enforcement, wage and hour violations, job openings, union reports, workforce development data, mine safety, and Bureau of Labor Statistics economic indicators including CPI, CES, OES, and CPS. APIs are free to use with registration via the Open Data Portal.
 
-The U.S. Department of Labor provides REST APIs exposing over 200 datasets covering employment statistics, H-1B and foreign labor visa data, OSHA inspections and enforcement, wage and hour violations, job openings, union reports, workforce development data, mine safety, and Bureau of Labor Statistics economic indicators including CPI, CES, OES, and CPS.
+**Areas:** Government · Employment · Labor · Workforce · OSHA · Safety · Wages · H-1B · Statistics · Open Data
 
-- **Developer Portal**: https://developer.dol.gov/
-- **Open Data Portal**: https://dataportal.dol.gov/
-- **GitHub Org**: https://github.com/USDepartmentofLabor
-- **API Base URL**: https://api.dol.gov/V1/
-- **Registration**: Free at https://dataportal.dol.gov/api-keys
+## Department of Labor on APIs.io
 
-## APIs
+Everything profiled for Department of Labor is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/dol/](https://apis.io/providers/dol/)** — or go straight to one of the APIs or properties below.
 
-- DOL Employment Statistics API
-- DOL OSHA Enforcement API
-- DOL Wage and Hour Compliance API
-- DOL H-1B Foreign Labor Certification API
-- DOL Mine Safety and Health API
-- DOL Public Workforce System API
-- DOL Veterans Employment API
-- DOL Sweat and Toil API
+### APIs (13)
+
+- [DOL Employment Statistics API](https://apis.io/apis/dol/dol-employment-statistics-api/) — Access to Current Employment Statistics (CES), Current Population Survey (CPS), Occupational Employment Statistics Survey (OES), Quarterly Census Employment…
+- [DOL OSHA Enforcement API](https://apis.io/apis/dol/dol-osha-enforcement-api/) — Access OSHA inspection and enforcement data including inspection details, violations, citations, penalties, and accident injury reports. Covers all OSHA…
+- [DOL Wage and Hour Compliance API](https://apis.io/apis/dol/dol-wage-and-hour-compliance-api/) — Access Wage and Hour Division (WHD) compliance action data covering all concluded compliance actions since FY 2005, including back wages, violations, and…
+- [DOL H-1B Foreign Labor Certification API](https://apis.io/apis/dol/dol-h-1b-foreign-labor-certification-api/) — Access Labor Condition Application (LCA) data collected by the Employment and Training Administration's Office of Foreign Labor Certification (OFLC)…
+- [DOL Mine Safety and Health API](https://apis.io/apis/dol/dol-mine-safety-and-health-api/) — Access Mine Safety and Health Administration (MSHA) data including mine-by-mine information, accidents and injuries, inspections, violations, assessments,…
+- [DOL Public Workforce System API](https://apis.io/apis/dol/dol-public-workforce-system-api/) — Access Public Workforce System data including Initial Unemployment Insurance (UI) Claims, Workforce Investment Act data, job openings, and workforce…
+- [DOL Veterans Employment API](https://apis.io/apis/dol/dol-veterans-employment-api/) — Access VETS-4212 and VETS-100 datasets containing veteran employment data reported by federal contractors and subcontractors, including hiring benchmarks…
+- [DOL Sweat and Toil API](https://apis.io/apis/dol/dol-sweat-and-toil-api/) — Access the International Labor Affairs Bureau (ILAB) Sweat and Toil data covering child labor and forced labor worldwide, including goods produced with…
+- [DOL Open Data API V4](https://apis.io/apis/dol/dol-api-v4/) — The DOL Open Data API v4 is the Department of Labor's modernized REST API replacing the retired developer.dol.gov APIv1 and APIv2. It is served from the DOL…
+- [BLS Public Data API V2](https://apis.io/apis/dol/bls-public-data-api/) — The Bureau of Labor Statistics Public Data API v2 provides programmatic access to historical BLS time series data in JSON or Excel. Version 2 requires…
+- [DOL Enforcement Data](https://apis.io/apis/dol/dol-enforcement-data/) — The DOL Enforcement Data site at data.dol.gov publishes the Department's enforcement records from agencies including the Wage and Hour Division, OSHA, MSHA,…
+- [DOL API Sampler](https://apis.io/apis/dol/dol-api-sampler/) — The DOL API Sampler is an interactive playground for exploring the DOL Open Data API v4 endpoints. It serves as a quick way to issue sample requests, browse…
+- [DOL Open Data Catalog](https://apis.io/apis/dol/dol-open-data-catalog/) — The Department of Labor Open Data Catalog publishes datasets across labor statistics, enforcement, employment training, and worker protection programs.…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Dol Context](https://apis.io/jsonld/dol/dol-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [Department of Labor Vocabulary](https://apis.io/vocabularies/dol/dol-vocabulary/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Dol Domain Security](https://apis.io/security/dol/dol-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Dol Plans Pricing](https://apis.io/plans/dol/dol-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Dol Rate Limits](https://apis.io/rate-limits/dol/dol-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Dol Finops](https://apis.io/finops/dol/dol-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.dol.gov/)
+- [Documentation](https://developer.dol.gov/)
+- [Pricing](https://dataportal.dol.gov/)
+- [Changelog](https://developer.dol.gov/release-notes/)
+- [Blog](https://blog.dol.gov/)
+- [Status](https://developer.dol.gov/others/api-metrics-per-key/)
+
+## API Evangelist rating
+
+**Kin Score 20.8** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.4 |
+| Contract quality | 14.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 21.1 |
+| Developer ergonomics | 15.5 |
+| Access clarity | 18.4 |
+
+**Agent readiness 3.1** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 16.7** — Government & Public Sector
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/dol/](https://apis.io/providers/dol/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Department of Labor: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/dol/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
